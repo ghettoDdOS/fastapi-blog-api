@@ -1,3 +1,3 @@
-from .router import router as v1_router
+from .router import blog_v1_router
 
-__all__ = ("v1_router",)
+__all__ = ("blog_v1_router",)

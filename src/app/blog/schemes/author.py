@@ -1,4 +1,4 @@
-from app.schemas import BaseORMSchema, BaseSchema
+from app.common.schemas import BaseORMSchema, BaseSchema
 
 
 class BaseAuthor(BaseSchema):

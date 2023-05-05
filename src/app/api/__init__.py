@@ -1,3 +1,3 @@
-from .app import app as api_app
+from .router import api_router
 
-__all__ = ("api_app",)
+__all__ = ("api_router",)

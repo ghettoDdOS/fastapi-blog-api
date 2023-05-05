@@ -7,7 +7,7 @@ import uvicorn
 from alembic import command
 from alembic.config import Config
 
-from app.config import settings
+from app.core.config import settings
 
 app = typer.Typer()
 
@@ -17,7 +17,7 @@ alembic_config = Config(settings.paths.PROJECT_DIR / "alembic.ini")
 @app.command()
 def runserver():
     uvicorn.run(
-        "app.main:app",
+        "app.core.app:app",
         host="localhost",
         port=8080,
         reload=True,
